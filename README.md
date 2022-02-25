@@ -35,4 +35,4 @@ This repo outlines my journey to mastering PHP for Web Development.
 ## Learning Resources
 
 - Programming With Mosh (https://www.youtube.com/watch?v=7S_tz1z_5bA)
-- W3Schools ()
+- W3Schools (https://www.w3schools.com/sql/default.asp)
