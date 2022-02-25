@@ -1,5 +1,7 @@
 # MySQL Practice
 
+![image](https://user-images.githubusercontent.com/55777067/155753873-7470a3b6-8399-4c8b-8dba-391a4c51e49b.png)
+
 ## Table of contents
 * [General Information](#general-info)
 * [Topics Covered](#topics-covered)
@@ -8,7 +10,7 @@
 
 ## General Information
 
-This repo outlines my journey to mastering PHP for Web Development.
+This repo outlines my journey to mastering SQL and MySQL.
 
 
 ## Topics Covered
