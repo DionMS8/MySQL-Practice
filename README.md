@@ -1,6 +1,6 @@
 # MySQL Practice
 
-![image](https://user-images.githubusercontent.com/55777067/155753873-7470a3b6-8399-4c8b-8dba-391a4c51e49b.png)
+![image](https://user-images.githubusercontent.com/55777067/155754039-8d0fe31f-64e5-4e6b-9c77-def3c57405d1.png)
 
 ## Table of contents
 * [General Information](#general-info)
