@@ -32,6 +32,11 @@ This repo outlines my journey to mastering SQL and MySQL.
 - Using Subqueries in Updates 
 - Deleting Rows
 - Restoring Course Databases
+- Aggregate Functions
+- Group By
+- Combined With Join
+- Alias Tables
+- Having vs Where
 
 
 ## Learning Resources
