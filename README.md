@@ -1,4 +1,4 @@
-# MySQL-Practice
+# MySQL Practice
 
 ## Table of contents
 * [General Information](#general-info)
