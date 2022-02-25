@@ -36,5 +36,5 @@ This repo outlines my journey to mastering SQL and MySQL.
 
 ## Learning Resources
 
-- Mosh YT (https://www.youtube.com/watch?v=7S_tz1z_5bA)
+- Programming with Mosh (https://www.youtube.com/watch?v=7S_tz1z_5bA)
 - W3Schools (https://www.w3schools.com/sql/default.asp)
