@@ -1,4 +1,4 @@
-//===[FOREIGN KEY]============================================================
+=====[FOREIGN KEY]============================================================
 
 - THIS POINTS TO THE PRIMARY KEY IN ANOTHER 
 TABLE AND IT IS USED TO PREVENT ACTIONS THAT 
@@ -9,7 +9,7 @@ THE CHILD TABLE AND THE TABLE WITH THE PRIMARY
 KEY IS CALLED THE REFERENCED OR PARENT TABLE
 
 
-//==[CREATING A TABLE WITH A FOREIGN KEY]==============================
+===[CREATING A TABLE WITH A FOREIGN KEY]==============================
 
 CREATE TABLE Orders (
     OrderID int NOT NULL,
@@ -20,12 +20,17 @@ CREATE TABLE Orders (
 );
 
 
-//==[DEFINING A FOREIGN KEY ON MULTIPLE COLUMNS]==============================
+===[DEFINING A FOREIGN KEY ON MULTIPLE COLUMNS]==============================
 
 ALTER TABLE Orders
 ADD CONSTRAINT FK_PersonOrder
 FOREIGN KEY (PersonID) REFERENCES Persons(PersonID);
 
+
+===[DROPPING A FOREIGN KEY FROM A TABLE]===============================================================
+
+ALTER TABLE Orders
+DROP FOREIGN KEY FK_PersonOrder;
 
 
 

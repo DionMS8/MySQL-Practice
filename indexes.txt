@@ -1,18 +1,28 @@
-//=====[INDEXES]=========================================================
+=====[INDEXES]=========================================================
 
 - INDEXES ARE ATTRIBUTES THAT CAN BE ASSIGNED 
 TO COLUMNS TO MAKE DATA RETRIEVAL QUICKER AND 
-MORE EFFICIENT PROCESS
+MORE EFFICIENT
 
 - INDEXED COLUMNS TAKE LONGER TO BE UPDATED 
 COMPARED TO REGULAR COLUMNS BECAUSE BOTH THE 
 COLUMN AND THE INDEX ITSELF NEED TO BE UPDATED 
 
 
+===[CREATING AN INDEX]=================================================
+
+CREATE INDEX index_name 
+ON table_name (column_name);
+
+CREATE UNIQUE INDEX index_name 
+ON table_name (column_name)
 
 
+===[DROPPING AN INDEX]==================================================
 
+ALTER TABLE table_name 
 
+DROP INDEX index_name;
 
 
 

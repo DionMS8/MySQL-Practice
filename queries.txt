@@ -1,16 +1,30 @@
-//=====[PERFORMING SQL QUERIES]================================================
+=====[PERFORMING SQL QUERIES]================================================
 
-- SELECT * FROM users;
+=> CREATE DATABASE db_name;
 
-- SELECT first_name, last_name FROM users;
+=> DROP DATABASE db_name;
 
-- SELECT * FROM users WHERE age <= 18 ORDER BY age ASC;
+=> USE db_name;
+
+=> CREATE TABLE table_name (
+    column_name1 data_type,
+    column_name2 data_type,
+    ...
+    column_nameN data_type
+);
+
+=> SELECT * FROM table_name;
+
+=> SELECT column1_name, column2_name 
+FROM table_name;
+
+=> SELECT * FROM users WHERE age <= 18 ORDER BY age ASC;
 
 - THIS QUERY WILL RETURN ALL DATA FROM THE 
 USERS TABLE WITH AN AGE VALUE OF LESS THAN 
 18 IN ITS RESULTS SET
 
-- THE WHERE CLAUSE IS USED TO FILTER WHAT 
+- THE WHERE CLAUSE IS USED TO FILTER WHAT DATA
 GETS RETURNED FOR QUERIES
 
 - THE ORDER BY KEYWORD INDICATES THAT THE 
@@ -21,11 +35,33 @@ IN ASCENDING ORDER
 
 ===[INSERT INTO]=============================================================
 
+- EXAMPLE OF INSERTING A RECORD INTO A TABLE
+
 INSERT INTO users (first_name, last_name, address, email)
-VALUES (‘Tester’, ‘Jester’, ‘123 Fake Street, Sheffield, United
-Kingdom’, ‘test@lukeharrison.dev’);
+VALUES (John, ‘Doe’, ‘123 Street, City, State’, ‘test@gmail.com’);
 
 
+===[MIN() AND MAX()]==========================================================
+
+- RETURNING THE SMALLEST VALUE OF A COLUMN
+
+SELECT MIN(column_name)
+AS SmallestValue          // THIS IS OPTIONAL
+FROM table_name
+WHERE condition;
+
+- RETURNING THE LARGEST VALUE OF A COLUMN
+
+SELECT MAX(column_name)
+AS LargestValue           // THIS IS OPTIONAL 
+FROM table_name
+WHERE condition;
+
+===[COUNT(*)]==========================================================
+
+SELECT COUNT(*)
+FROM Products
+WHERE Price = 18;
 
 
 
