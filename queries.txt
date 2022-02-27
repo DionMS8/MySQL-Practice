@@ -1,0 +1,33 @@
+//=====[PERFORMING SQL QUERIES]================================================
+
+- SELECT * FROM users;
+
+- SELECT first_name, last_name FROM users;
+
+- SELECT * FROM users WHERE age <= 18 ORDER BY age ASC;
+
+- THIS QUERY WILL RETURN ALL DATA FROM THE 
+USERS TABLE WITH AN AGE VALUE OF LESS THAN 
+18 IN ITS RESULTS SET
+
+- THE WHERE CLAUSE IS USED TO FILTER WHAT 
+GETS RETURNED FOR QUERIES
+
+- THE ORDER BY KEYWORD INDICATES THAT THE 
+RESULTS WILL BE ORDERED USING THE AGE COLUMN, 
+WITH THE VALUES ARRANGED FROM LOWEST TO HIGHEST, 
+IN ASCENDING ORDER
+
+
+===[INSERT INTO]=============================================================
+
+INSERT INTO users (first_name, last_name, address, email)
+VALUES (‘Tester’, ‘Jester’, ‘123 Fake Street, Sheffield, United
+Kingdom’, ‘test@lukeharrison.dev’);
+
+
+
+
+
+
+

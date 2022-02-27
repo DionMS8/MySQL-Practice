@@ -1,0 +1,49 @@
+//===[PRIMARY KEY]============================================================
+
+- THIS IS USED TO UNIQUELY IDENTIFY EACH RECORD
+IN A TABLE AND THE TABLE CAN ONLY HAVE ONE 
+PRIMARY KEY
+
+- IT CANNOT CONTAIN A NULL VALUE
+
+- THE TABLE WITH THE THE PRIMARY KEY IS 
+CALLED THE REFERENCED OR PARENT TABLE AND 
+THE TABLE WITH THE FOREIGN KEY IS CALLED 
+THE CHILD TABLE
+
+CREATE TABLE Persons (
+    ID int NOT NULL,
+    LastName varchar(255) NOT NULL,
+    FirstName varchar(255),
+    Age int,
+    PRIMARY KEY (ID)
+);
+
+//==[DEFINING A PRIMARY KEY ON MULTIPLE COLUMNS]==============================
+
+CREATE TABLE Persons (
+    ID int NOT NULL,
+    LastName varchar(255) NOT NULL,
+    FirstName varchar(255),
+    Age int,
+    CONSTRAINT PK_Person PRIMARY KEY (ID,LastName)
+);
+
+- NOTE THERE IS A SINGLE PRIMARY KEY BUT IT 
+HAS 2 VALUES (ID + LastName)
+
+
+//==[ADDING A PRIMARY KEY TO AN EXISTING TABLE]==============================
+
+ALTER TABLE Persons
+ADD PRIMARY KEY (ID);
+
+
+//==[DESTROYING THE PRIMARY KEY]===============================================================
+
+DROP PRIMARY KEY;
+
+
+
+
+

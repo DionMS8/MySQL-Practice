@@ -1,0 +1,39 @@
+//=====[MYSQL TRIGGERS]================================================
+
+//===[CREATING A TRIGGER]==============================================
+
+Trigger_name 
+=> NAME OF THE TRIGGER
+
+Trigger_time 
+=> TIME OF TRIGGER ACTIVATION
+=> 2 POSSIBLE VALUES, BEFORE/AFTER
+
+Trigger_event 
+=> THIS EVENT INVOKES THE TRIGGER 
+=> 3 POSSIBLE VALUES, INSERT/UPDATE/DELETE
+
+CREATE TRIGGER trigger_name trigger_time trigger_event
+ON table_name
+FOR EACH ROW
+BEGIN
+[...LOGIC FOR THE TRIGGER EXECUTION...]
+END;
+
+- A TRIGGER IS ALWAYS ASSOCIATED WITH A 
+SPECIFIC TABLE IN THE DB, HENCE THE NAME OF 
+THE TABLE MUST BE SPECIFIED. IF THIS TABLE 
+IS DELETED, THE TRIGGER IS ALSO DELETED.
+
+
+//===[DESTROYING A TRIGGER]=============================================
+
+DROP Trigger trigger_name
+
+
+
+
+
+
+
+

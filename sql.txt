@@ -1,16 +1,21 @@
-//=====[SQL]==========================================
+//=====[MYSQL NOTES]==========================================
 
 - SQL => STRUCTURED QUERY LANGUAGE
 
+- SQL IS USED TO WRITE QUERIES TO THE DATABASE
 
+- MYSQL IS A DBMS THAT RUNS ON A SERVER
 
+- SELECT 
+- FROM 
+- WHERE
 
+//===[CREATING A TABLE]========================================
 
-
-
-
-
-
+CREATE TABLE users (
+ id int,
+ first_name varchar(255)
+);
 
 
 
