@@ -1,7 +1,7 @@
 //=====[SQL JOINS]=======================================================================================
 
 - JOINS ARE USED TO COMBINE ROWS FROM 2 
-OR MORE TABLES, BASED ON A RELATED COLUMN 
+OR MORE TABLES, BASED ON A MATCHED COLUMN 
 BETWEEN THEM
 
 
@@ -24,11 +24,16 @@ there is a match in either left or right table
 
 ===[EXECUTING A JOIN]==========================================================
 
+SELECT * FROM bands 
+JOIN albums ON band.id = albums.band_id
+
+
 SELECT bands.name AS 'Band Name'
 FROM bands
 LEFT JOIN albums ON bands.id = albums.band_id
 GROUP BY albums.band_id
 HAVING COUNT(albums.id) = 0;
+
 
 
 

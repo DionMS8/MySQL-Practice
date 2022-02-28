@@ -1,0 +1,24 @@
+=====[REGEXP OPERATOR AND REGULAR EXPRESSIONS]=========================
+
+===[PATTERN MATCHING OPERATIONS]=========================================
+
+=> RETURNING ALL NAMES STARTING WITH "SH"
+SELECT name FROM users WHERE name REGEXP '^sh';
+
+
+=> RETURNING ALL NAMES THAT END WITH "OK"
+SELECT name FROM users WHERE name REGEXP 'ok$';
+
+
+=> RETURNING ALL THE NAMES WHICH CONTAIN "MAR"
+SELECT name FROM users WHERE name REGEXP 'mar';
+
+
+=> RETURNING ALL NAMES THAT START WITH A VOWEL AND END WITH "OK"
+SELECT FirstName FROM intque.users WHERE FirstName REGEXP '^[aeiou].*ok$';
+
+(WHAT IS intque???)
+
+RESOURCE: [https://remotemysql.com/tutor16.html]
+
+

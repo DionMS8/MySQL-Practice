@@ -6,12 +6,27 @@
 
 => USE dbName
 
-=> $conn = mysqli_connect("localhost","userID","userpass") 
-or die ("Could not connect: " . mysql_error());
 
-=> mysqli_select_db("dbName", $conn); 
+===[CONNECTING TO AN EXISTING DB WITH PHP]========================================================
 
-=> mysqli_close($conn);
+=> mysqli_connect(server,user,passwd,new_link,
+client_flag);
+
+$dbhost = 'localhost';
+$dbuser = 'guest';
+$dbpass = 'guest123';
+$conn = mysqli_connect($dbhost, $dbuser, $dbpass);
+
+if(! $conn ) {
+    die('Could not connect: ' . mysqli_error());
+}
+
+echo 'Connected successfully';
+
+mysqli_close($conn);
+
+
+=> mysqli_select_db("dbName", $connect); 
 
 
 ===[CREATING A TABLE]========================================

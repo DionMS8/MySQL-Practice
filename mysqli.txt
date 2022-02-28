@@ -11,14 +11,4 @@ IN AN NORMAL NUMERIC ARRAY
 - mysqli_fetch_object()
 - mysqli_fetch_row()
 
-- mysqli_fetch_assoc() => RETURNS THE RESULT ROW 
-IN AN ASSOCIATIVE ARRAY 
-
-mysqli_debug() => ENABLES/DISABLES DEBUG MODE
-
-
-mysqli_error() => RETURNS THE LAST ERROR MESSAGE
-
-
-
 

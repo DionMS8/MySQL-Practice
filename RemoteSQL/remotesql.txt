@@ -1,0 +1,19 @@
+=====[SETTING UP REMOTESQL]================================================
+
+$dbhost = 'remotemysql.com:3306';
+$dbuser = 'guest';
+$dbpass = 'guest123';
+$conn = mysqli_connect($dbhost, $dbuser, $dbpass);
+
+
+
+
+
+
+
+
+
+
+
+
+

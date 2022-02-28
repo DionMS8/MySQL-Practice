@@ -1,0 +1,44 @@
+<html>
+
+   <head>
+      <title>Creating MySQL Database</title>
+   </head>
+   
+   <body>
+
+      <?php
+
+         $dbhost = 'localhost';
+         $dbuser = 'your_username;
+         $dbpass = 'your_password';
+         $conn = mysqli_connect($dbhost, $dbuser, $dbpass);
+         
+         if(!$conn) {
+            die('Could not connect: ' . mysqli_error());
+         }
+
+         echo 'Connected successfully<br />';
+
+         mysqli_select_db("db_name")
+         
+         if(!$retval) {
+            die('Could not create database: ' . mysqli_error());
+         }
+         
+         mysqli_close($conn);
+
+      ?>
+
+   </body>
+
+</html>
+
+
+=> USING PHP TO CREATE A NEW MYSQL DB
+
+$sql = 'CREATE DATABASE TUTORIALS';
+$retval = mysqli_query($sql, $conn);
+
+echo "Database TUTORIALS created successfully\n";
+
+

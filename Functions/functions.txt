@@ -59,7 +59,8 @@ ROW IN AN ASSOCIATIVE ARRAY
 
 => THE EXTRACT FUNCTION PULLS THE VALUES OF 
 EACH ROW FROM THE RESOURCE AND STORES THEM IN 
-VARIABLES NAMED AFTER THE FIELD NAMES
+VARIABLES NAMED AFTER THE FIELD NAMES FROM 
+THE TABLE
 
 
 ===[INSERT INTO]=============================================================
@@ -99,21 +100,14 @@ WHERE Price = 18;
 ===[DELETING TABLE RECORDS]============================================
 
 
-===[FILTERING DATA FROM A COLUMN]===============================================
-
-SELECT name FROM users WHERE name REGEXP '^sh';
-
-- THIS WILL RETURN ALL NAMES STARTING 
-WITH "sh" SUCH AS SHANE OR SHAWN
 
 
 SELECT * users WHERE PhoneNumber IS NULL;
 
 
+mysqli_debug() => ENABLES/DISABLES DEBUG MODE
 
-
-
-
+mysqli_error() => RETURNS THE LAST ERROR MESSAGE
 
 
 
