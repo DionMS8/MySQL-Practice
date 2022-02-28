@@ -1,0 +1,16 @@
+=====[THE INSERT QUERY]============================================
+
+UPDATE table_name SET field1 = new-value1, 
+field2 = new-value2;
+
+UPDATE table_name SET field1 = new-value1, 
+WHERE some_field=some_value;
+
+
+===[UPDATING DATA USING PHP]========================================
+
+
+
+
+
+

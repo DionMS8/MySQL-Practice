@@ -1,0 +1,24 @@
+=====[THE DELETE QUERY]============================================
+
+=> RECORDS CAN ONLY BE DELETED FROM A SINGLE 
+TABLE AT A TIME
+
+DELETE FROM table_name [WHERE Clause]
+
+=> THE WHERE CONDITION CAN BE USEFUL FOR DELETING ONLY SELECTED ROWS 
+===[DELETING DATA USING PHP]========================================
+
+$sql = 'DELETE FROM tutorials_tbl WHERE tutorial_id = 3';
+
+mysqli_select_db('TUTORIALS');
+
+$retval = mysqli_query( $sql, $conn );
+
+if(! $retval ) {
+    die('Could not delete data: ' . mysqli_error());
+}
+echo "Deleted data successfully\n";
+mysqli_close($conn);
+
+
+

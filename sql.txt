@@ -6,11 +6,6 @@
 
 - MYSQL IS A DBMS THAT RUNS ON A SERVER
 
-- SELECT 
-- FROM 
-- WHERE
-
-
 
 
 
