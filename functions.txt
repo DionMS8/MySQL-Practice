@@ -1,17 +1,115 @@
-=====[MYSQL FUNCTIONS]=======================================================
+=====[PERFORMING SQL QUERIES]================================================
 
-mysqli_connect() => OPENS A NEW DB CONNECTION
-mysqli_close() => CLOSES AN OPEN DB CONNECTION
+=> CREATE DATABASE db_name;
 
-mysqli_query() => EXECUTES A QUERY
+=> DROP DATABASE db_name;
 
-- mysqli_fetch_all() => RETURNS THE RESULT ROWS
-IN AN NORMAL NUMERIC ARRAY
+=> USE db_name;
 
-- mysqli_fetch_assoc() => RETURNS THE RESULT ROWS 
-IN AN ASSOCIATIVE ARRAY 
 
-mysqli_debug() => ENABLES/DISABLES DEBUG MODE
+//===[CREATING A TABLE]========================================
+
+=> CREATE TABLE table_name (
+    column_name1 data_type(character_limit) NULL/NOT NULL,
+    column_name2 data_type(character_limit) NULL/NOT NULL,
+    ...
+);
+
+=> CREATE TABLE users (
+ id INT NOT NULL AUTO_INCREMENT,
+ first_name VARCHAR(255),
+ PRIMARY KEY (id)
+);
+
+
+===[CREATING A TABLE FROM AN EXISTING TABLE]=====================
+
+=> THIS ALLOWS FOR A COPY OF AN EXISTING TABLE
+TO BE CREATED WITH A NEW NAME 
+
+CREATE TABLE new_table_name AS
+SELECT column1, column2,...
+FROM existing_table_name;
+
+
+===[THE SELECT STATEMENT]================================
+
+=> SELECT * FROM table_name;
+
+=> SELECT column1_name, column2_name 
+FROM table_name;
+
+=> SELECT * FROM users WHERE age <= 18 ORDER BY age ASC;
+
+- THIS QUERY WILL RETURN ALL DATA FROM THE 
+USERS TABLE WITH AN AGE VALUE OF LESS THAN 
+18 IN ITS RESULTS SET
+
+- THE WHERE CLAUSE IS USED TO FILTER WHAT DATA
+GETS RETURNED FOR QUERIES
+
+- THE ORDER BY KEYWORD INDICATES THAT THE 
+RESULTS WILL BE ORDERED USING THE AGE COLUMN, 
+WITH THE VALUES ARRANGED FROM LOWEST TO HIGHEST, 
+IN ASCENDING ORDER
+
+
+===[INSERT INTO]=============================================================
+
+- EXAMPLE OF INSERTING A RECORD INTO A TABLE
+
+INSERT INTO users (first_name, last_name, address, email)
+VALUES (John, ‘Doe’, ‘123 Street, City, State’, ‘test@gmail.com’);
+
+
+===[MIN() AND MAX()]==========================================================
+
+- RETURNING THE SMALLEST VALUE OF A COLUMN
+
+SELECT MIN(column_name)
+AS SmallestValue          // THIS IS OPTIONAL
+FROM table_name
+WHERE condition;
+
+- RETURNING THE LARGEST VALUE OF A COLUMN
+
+SELECT MAX(column_name)
+AS LargestValue           // THIS IS OPTIONAL 
+FROM table_name
+WHERE condition;
+
+===[COUNT(*)]==========================================================
+
+SELECT COUNT(*)
+FROM Products
+WHERE Price = 18;
+
+
+===[JOINS]==========================================================
+
+SELECT bands.name AS 'Band Name'
+FROM bands
+LEFT JOIN albums ON bands.id = albums.band_id
+GROUP BY albums.band_id
+HAVING COUNT(albums.id) = 0;
+
+
+===[DELETING TABLE RECORDS]============================================
+
+
+===[FILTERING DATA FROM A COLUMN]===============================================
+
+SELECT name FROM users WHERE name REGEXP '^sh';
+
+- THIS WILL RETURN ALL NAMES STARTING 
+WITH "sh" SUCH AS SHANE OR SHAWN
+
+
+SELECT * users WHERE PhoneNumber IS NULL;
+
+
+
+
 
 
 
