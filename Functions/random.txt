@@ -1,0 +1,24 @@
+=====[RANDOM SQL FUNCTIONS]==============================================================
+
+===[MIN() AND MAX()]==========================================================
+
+- RETURNING THE SMALLEST VALUE OF A COLUMN
+
+SELECT MIN(column_name)
+AS SmallestValue          // THIS IS OPTIONAL
+FROM table_name
+WHERE condition;
+
+- RETURNING THE LARGEST VALUE OF A COLUMN
+
+SELECT MAX(column_name)
+AS LargestValue           // THIS IS OPTIONAL 
+FROM table_name
+WHERE condition;
+
+===[COUNT(*)]==========================================================
+
+SELECT COUNT(*)
+FROM Products
+WHERE Price = 18;
+

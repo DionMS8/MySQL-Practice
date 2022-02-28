@@ -1,0 +1,44 @@
+==========[SQL INJECTION]=====================================
+
+=> THIS USUALLY OCCURS WHEN THE USER IS REQUIRED 
+TO ENTER DATA INTO THE DATABASE SUCH AS ON FORMS.
+
+=> USERS CAN PROVIDE SQL QUERIES IN THE INPUT 
+FIELDS AND THESE CAN RUN ON THE DATABASE 
+AND CAN CAUSE UNEXPECTED RESULTS.
+
+
+=====[PREVENTING IT]=======================================
+
+=> ALL ESCAPE CHARACTERS NEED TO BE HANDLED 
+BEFORE SENDING THE DATA TO THE DATABASE.
+
+
+===[USING THE PREG_MATCH FUNCTION]=========================
+
+if (preg_match("/^\w{8,20}$/", $_GET['username'], $matches)) {
+   $result = mysqli_query("SELECT * FROM users WHERE username = $matches[0]");
+} else  {
+   echo "username not accepted";
+}
+
+
+===[USING THE REAL_ESCAPE FUNCTION]=========================
+
+if (get_magic_quotes_gpc()) {
+   $name = stripslashes($name);
+}
+
+$name = mysqli_real_escape_string($name);
+mysqli_query("SELECT * FROM users WHERE name = '{$name}'");
+
+
+===[LIKE QUANDARY]===========================================
+
+=> THIS USES A CUSTOM ESCAPING MECHANISM TO
+CONVERT USER PROVIDED % AND _ CHARACTERS TO 
+LITERALS USING addcslashes(), WHICH LETS 
+A CHARACTER RANGE BE SPECIFIED FOR ESCAPE
+
+
+
