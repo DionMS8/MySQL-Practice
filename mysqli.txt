@@ -1,18 +1,23 @@
 =====[MYSQL FUNCTIONS]=======================================================
 
-mysqli_connect() => OPENS A NEW DB CONNECTION
-mysqli_close() => CLOSES AN OPEN DB CONNECTION
-
 mysqli_query() => EXECUTES A QUERY
 
-- mysqli_fetch_all() => RETURNS THE RESULT ROWS
+- mysqli_fetch_all() => RETURNS THE RESULT ROW
 IN AN NORMAL NUMERIC ARRAY
 
-- mysqli_fetch_assoc() => RETURNS THE RESULT ROWS 
+
+- mysqli_fetch_array()
+
+- mysqli_fetch_object()
+- mysqli_fetch_row()
+
+- mysqli_fetch_assoc() => RETURNS THE RESULT ROW 
 IN AN ASSOCIATIVE ARRAY 
 
 mysqli_debug() => ENABLES/DISABLES DEBUG MODE
 
+
+mysqli_error() => RETURNS THE LAST ERROR MESSAGE
 
 
 

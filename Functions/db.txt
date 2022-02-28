@@ -1,0 +1,44 @@
+=====[SETTING UP THE MYSQL DATABASE]================================================
+
+=> CREATE DATABASE dbName;
+
+=> DROP DATABASE dbName;
+
+=> USE dbName
+
+=> $conn = mysqli_connect("localhost","userID","userpass") 
+or die ("Could not connect: " . mysql_error());
+
+=> mysqli_select_db("dbName", $conn); 
+
+=> mysqli_close($conn);
+
+
+===[CREATING A TABLE]========================================
+
+=> CREATE TABLE table_name (
+    column_name1 data_type(character_limit) NULL/NOT NULL,
+    column_name2 data_type(character_limit) NULL/NOT NULL,
+    ...
+);
+
+=> CREATE TABLE users (
+ id INT NOT NULL AUTO_INCREMENT,
+ first_name VARCHAR(255),
+ PRIMARY KEY (id)
+);
+
+
+===[CREATING A TABLE FROM AN EXISTING TABLE]=====================
+
+=> THIS ALLOWS FOR A COPY OF AN EXISTING TABLE
+TO BE CREATED WITH A NEW NAME 
+
+CREATE TABLE new_table_name AS
+SELECT column1, column2,...
+FROM existing_table_name;
+
+
+
+
+

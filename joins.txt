@@ -1,19 +1,34 @@
 //=====[SQL JOINS]=======================================================================================
 
-- JOINS ARE USED TO COMBINE ROWS FROM 2 OR MORE TABLES, BASED ON A RELATED COLUMN BETWEEN THEM
+- JOINS ARE USED TO COMBINE ROWS FROM 2 
+OR MORE TABLES, BASED ON A RELATED COLUMN 
+BETWEEN THEM
 
 
 //=====[TYPES OF JOINS]=======================================================================================
 
-INNER JOIN: Returns records that have matching values in both tables
-LEFT OUTER JOIN: Returns all records from the left table, and the matched records from the right table
-RIGHT OUTER JOIN: Returns all records from the right table, and the matched records from the left table
-FULL OUTER JOIN: Returns all records when there is a match in either left or right table
+=> INNER JOIN: Returns records that have 
+matching values in both tables
+
+=> LEFT OUTER JOIN: Returns all records from 
+the left table, and the matched records from 
+the right table
+
+=> RIGHT OUTER JOIN: Returns all records from 
+the right table, and the matched records from 
+the left table
+
+=> FULL OUTER JOIN: Returns all records when 
+there is a match in either left or right table
 
 
+===[EXECUTING A JOIN]==========================================================
 
-
-
+SELECT bands.name AS 'Band Name'
+FROM bands
+LEFT JOIN albums ON bands.id = albums.band_id
+GROUP BY albums.band_id
+HAVING COUNT(albums.id) = 0;
 
 
 
