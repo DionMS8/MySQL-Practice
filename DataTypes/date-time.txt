@@ -1,0 +1,29 @@
+=====[MYSQL DATA TYPES]==============================================
+
+=> TIMESTAMP VALUES ARE ALWAYS CONVERTED 
+FROM THE CURRENT TIME ZONE TO UTC FOR STORAGE 
+AND BACK FROM UTC TO THE CURRENT TIME ZONE 
+DURING RETRIEVAL
+
+=> TIMESTAMP IS MORE EFFICIENT COMPARED 
+TO DATETIME AND IS MORE APPROPRIATE WHEN THERE 
+ARE USERS FROM DIFFERENT TIME ZONES
+
+=> DATETIME VALUES ARE ALWAYS STORED WITH 
+THE CURRENT TIME ZONE
+
+
+RESOURCE: https://stackoverflow.com/questions/16993144/mysql-datetime-vs-timestamp-with-time-zones#:~:text=In%20MySQL%2C%20timestamp%20in%20fact,So%20it's%20consistent%20everywhere.
+
+
+
+
+
+
+
+
+
+
+
+
+

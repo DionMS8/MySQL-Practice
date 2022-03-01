@@ -54,6 +54,11 @@ SELECT column1, column2,...
 FROM existing_table_name;
 
 
+SHOW TABLES => THIS WILL RETURN A LIST OF 
+ALL OF THE TABLES IN THE CURRENT DATABASE
+
+
+
 
 
 

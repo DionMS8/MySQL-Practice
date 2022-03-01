@@ -22,3 +22,18 @@ SELECT COUNT(*)
 FROM Products
 WHERE Price = 18;
 
+
+===[MATCH()]==========================================================
+
+=> PATTERN MATCHING 
+
+=> THIS TAKES A COMMA-SEPARATED LIST THAT 
+NAMES THE COLUMNS TO BE SEARCHED AND FINDS 
+ALL THE ROWS IN A TABLE THAT MATCH A GIVEN 
+DOCUMENT
+
+
+
+RESOURCE: https://dev.mysql.com/doc/refman/8.0/en/fulltext-search.html
+
+
