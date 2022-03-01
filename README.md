@@ -38,9 +38,3 @@ This repo outlines my journey to mastering SQL and MySQL.
 - Alias Tables
 - Having vs Where
 
-
-## Learning Resources
-
-- Programming with Mosh (https://www.youtube.com/watch?v=7S_tz1z_5bA)
-- W3Schools (https://www.w3schools.com/sql/default.asp)
-- Web Dev Simplified (https://www.youtube.com/watch?v=p3qvj9hO_Bo)
